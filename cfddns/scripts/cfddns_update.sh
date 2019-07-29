@@ -28,7 +28,7 @@ update_record() {
             -H "X-Auth-Email:$cfddns_email" \
             -H "X-Auth-Key:$cfddns_key" \
             -H "Content-Type: application/json" \
-            --data '{"type":"A","name":'${cfddns_name}',"content":'${ip}',"ttl":'${cfddns_ttl}',"proxied":false}'
+            --data '{"type":"A","name":"'${cfddns_name}'","content":"'${ip}'","ttl":'${cfddns_ttl}',"proxied":false}'
 }
 
 record_response() {
